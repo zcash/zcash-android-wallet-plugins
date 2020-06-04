@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        kotlin_version = '1.3.61'
+        kotlin_version = '1.3.72'
     }
     repositories {
         jcenter()
@@ -14,7 +14,7 @@ buildscript {
 apply plugin: 'java-library'
 apply plugin: 'kotlin'
 
-// jitpack
+// jitpack (note: to change the version, push another release per https://jitpack.io/docs/#publishing-on-jitpack)
 apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.zcash'
 

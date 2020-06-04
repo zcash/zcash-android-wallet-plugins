@@ -41,4 +41,10 @@ interface MnemonicPlugin {
      */
     fun toWordList(mnemonic: CharArray): List<CharArray>
 
+    /**
+     * Provide the full word list for the given ISO 639-1 language code or throw an exception if
+     * the language is unsupported. Strings are fine here because this information is not sensitive.
+     */
+    fun fullWordList(languageCode: String): List<String>
+
 }
